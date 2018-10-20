@@ -3,7 +3,7 @@
 
 2.目录分页
 
-##仅修改了nexmoe主题，使用时请更换
+## 仅修改了nexmoe主题，使用时请更换
 
 # oneindex
 Onedrive Directory Index
