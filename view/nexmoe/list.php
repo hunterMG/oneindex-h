@@ -1,7 +1,7 @@
 <?php view::layout('layout')?>
 <?php 
     function isImage($filename){
-      $types = '(\.jpg$|\.png$|\.jpeg$)';
+      $types = '/(\.jpg$|\.png$|\.jpeg$)/i';
       if(preg_match($types, trim($filename))){
           return true;
       }else{
