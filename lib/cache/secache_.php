@@ -10,17 +10,14 @@ class secache_{
 		if(empty($cachefile)){
 			$cachefile = CACHE_PATH.'cachedata';
 		}
-
 		if(empty($size)){
 			$size = '100M';
 		}
-
 		define('SECACHE_SIZE',$size);
 		$this->cachefile = $cachefile;
 		$this->c = new secache();
 		$this->c->workat($this->cachefile);
 	}
-
 	function get($key){
 		$this->c->fetch(md5($key),$data);
 		if( is_array($data) && $data['expire'] > time() && !is_null($data['data']) ){
@@ -29,19 +26,16 @@ class secache_{
 			return null;
 		}
 	}
-
 	function set($key, $value=null, $expire=99999999){
 		$data['expire'] = time() + $expire;
 		$data['data'] = $value;
 		return $this->c->store(md5($key),$data);
 		
 	}
-
 	function clear(){
-		@unlink($this->cachefile);
+		return $this->c->clear();
 	}
 }
-
 class secache{
     var $idx_node_size = 40;
 	var $idx_node_base = 0;
