@@ -2,7 +2,11 @@
 1.看图模式
 
 2.目录分页
-
+## Todo:
+- [x] favicon.ico: [coolssr/oneindex-embellish](https://github.com/coolssr/oneindex-embellish)  
+- [x] 去掉 README.md 在底部的文件名显示(nexmoe主题)
+- [ ] 网页深浅色自适应（nexmoe主题）
+- [ ] 后台自动刷新缓存
 ## 仅修改了nexmoe主题，使用时请更换
 
 # oneindex
@@ -14,7 +18,7 @@ Onedrive Directory Index
 直接列onedrive目录，文件直链下载。  
 
 ## demo
-[https://xn.tn](https://xn.tn)  
+[dddf.ml](http://dddf.ml)  
 
 ## change log:  
 18-03-29: 更新直链获取机制、缓存机制，避免频繁访问的token失效  
