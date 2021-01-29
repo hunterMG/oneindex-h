@@ -58,7 +58,7 @@ Onedrive Directory Index
 3、oneindex 程序   
 
 ## 安装：
-<img width="658" alt="image" src="https://raw.githubusercontent.com/donwa/oneindex/files/images/install.gif">  
+![install](https://raw.githubusercontent.com/hunterMG/oneindex-h/files/images/install.gif)
 
 
 ## docker 安装运行：
