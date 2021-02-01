@@ -6,7 +6,7 @@
 - [x] favicon.ico: [coolssr/oneindex-embellish](https://github.com/coolssr/oneindex-embellish)  
 - [x] 去掉 README.md 在底部的文件名显示(nexmoe主题)
 - [ ] 网页深浅色自适应（nexmoe主题）
-- [ ] 后台自动刷新缓存
+- [ ] [后台自动刷新缓存](https://github.com/Baiyuetribe/OneindexMoe)
 ## 仅修改了nexmoe主题，使用时请更换
 
 # oneindex
@@ -65,25 +65,31 @@ Onedrive Directory Index
 
 从docker仓库获取镜像：
 ```sh
-docker pull yinaoxiong/oneindex
+docker pull vyg1/oneindex-h
 ```
 
 或者从源码构建镜像：
 
 ```shell
-git clone https://github.com/donwa/oneindex.git
-cd oneindex/
+git clone https://github.com/hunterMG/oneindex-h.git
+cd oneindex-h/
 docker build -t your-image-name .
 ```
 
 运行：
-
+```shell
+docker-compose up
+```
+or
 ```shell
 docker run -d -p {open port}:80 --name {container name} --restart=always {image name}
 ```
 
 停止删除容器：
-
+```shell
+docker-compose stop
+```
+or
 ```shell
 docker stop {container name}
 docker rm -v {container name}

@@ -1,6 +1,6 @@
 FROM php:fpm-alpine
 WORKDIR /var/www/html
-COPY / /var/www/html/
+COPY . /var/www/html/
 RUN apk add --no-cache nginx \
     && mkdir /run/nginx \
     && chown -R www-data:www-data cache/ config/ \
@@ -9,7 +9,7 @@ RUN apk add --no-cache nginx \
 
 EXPOSE 80
 # Persistent config file and cache
-VOLUME [ "/var/www/html/config", "/var/www/html/cache" ]
+# VOLUME [ "/var/www/html/config", "/var/www/html/cache" ]
 
 CMD php-fpm & \
     nginx -g "daemon off;"
